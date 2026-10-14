@@ -1,0 +1,107 @@
+{
+  "name": "Albert Services service-page docx -> Elementor 'new-tem.json' (bellbrook heating layout)",
+  "version": 1,
+  "source": {
+    "adapter": "docx",
+    "options": { "button_max_words": 4, "button_suffix": " Button" }
+  },
+  "vars": {
+    "city":    { "from": "doc.title", "regex": "--\\s*(\\w+)\\s+(\\w+)\\s+Web Page", "group": 1 },
+    "service": { "from": "doc.title", "regex": "--\\s*(\\w+)\\s+(\\w+)\\s+Web Page", "group": 2 }
+  },
+  "page": { "title": "{var.city} {var.service}" },
+  "defaults": { "on_overflow": "clone", "on_underflow": "warn_keep" },
+  "stale_terms": ["furnace", "thermostat", "heat pump"],
+
+  "ignore": [
+    { "section": 0,  "reason": "Site header (logo text, Schedule Online / Call buttons) - lives in the theme header template, not in this page JSON" },
+    { "section": 1,  "reason": "Main navigation - theme menu, not in this page JSON" },
+    { "section": 14, "reason": "Site footer (logo, quick links, services, useful links, contact details) - theme footer template, not in this page JSON" }
+  ],
+
+  "retain": [
+    { "target": "a68a826", "reason": "Hero call button: source has no hero button and no phone number ('Call Button' / '*Insert Contact Details*' are placeholders). Template label and tel: link kept - confirm the number." },
+    { "target": "6c1e6937", "reason": "Label replaced by source ('Call Now'); tel: link in template is kept - confirm the number." },
+    { "target": "19602cd3", "reason": "Satisfies source placeholder '*Insert Contact Form Here*' (form lives in global template #422)" },
+    { "target": "55e5ac2a", "reason": "No button text in source section 5 (Clayton's Trusted Electrical Specialists); template button kept" },
+    { "target": "46239fd6", "reason": "Eyebrow label above the FAQ heading; source has no equivalent" },
+    { "target": "155ae91c", "reason": "Testimonials block - not present in the content file" },
+    { "target": "2743f7a9", "reason": "Testimonials shortcode - not present in the content file" },
+    { "target": "1a652e61", "reason": "Global template #449 - content lives outside this JSON. Possibly where the source 'Service Areas' / 'Real Jobs' blocks belong; unknown - confirm." }
+  ],
+
+  "rules": [
+    { "name": "banner", "binds": [
+      { "target": "3e4f198c", "field": "title", "value": "var.service", "as": "heading" }
+    ]},
+
+    { "name": "hero", "section": { "index": 2, "expect": { "paras": 3 } }, "binds": [
+      { "target": "1ad728c0", "field": "title",  "value": "title" },
+      { "target": "3f7ba278", "field": "editor", "value": "paras" }
+    ]},
+
+    { "name": "services-grid", "section": { "index": 3, "expect": { "cards": ">=6", "paras": 1 } }, "binds": [
+      { "target": "2577d89d", "field": "title",  "value": "title" },
+      { "target": "ee18303",  "field": "editor", "value": "paras" },
+      { "repeat": { "over": "cards", "container": "4cacd431" }, "binds": [
+        { "field": "title",       "value": "item.heading" },
+        { "field": "description", "value": "item.body" },
+        { "field": "button",      "value": "item.button" }
+      ]}
+    ]},
+
+    { "name": "specialists", "section": { "index": 5, "expect": { "paras": 3 } }, "binds": [
+      { "target": "f8d8704",  "field": "title",  "value": "title" },
+      { "target": "1d672336", "field": "editor", "value": "paras" }
+    ]},
+
+    { "name": "experienced", "section": { "index": 6, "expect": { "cards": 3, "buttons": 1 } }, "binds": [
+      { "target": "56db65e2", "field": "title", "value": "title" },
+      { "repeat": { "over": "cards", "container": "497a5b26" }, "binds": [
+        { "field": "title_text",       "value": "item.heading" },
+        { "field": "description_text", "value": "item.body" }
+      ]},
+      { "target": "3fe535e3", "field": "text", "value": "buttons[0]" }
+    ]},
+
+    { "name": "go-to-contractor", "section": { "index": 7, "expect": { "paras": 2, "buttons": 1 } }, "binds": [
+      { "target": "17871ff0", "field": "title",  "value": "title" },
+      { "target": "29c9b76b", "field": "editor", "value": "paras" },
+      { "target": "7e524c4a", "field": "text",   "value": "buttons[0]" }
+    ]},
+
+    { "name": "benefits", "section": { "index": 8, "expect": { "cards": 6, "paras": 1 } }, "binds": [
+      { "target": "26377df3", "field": "title", "value": "title" },
+      { "target": "88f074a",  "field": "editor", "compose": [
+        { "paragraphs": "paras" },
+        { "list": "cards", "item": "<strong>{heading}</strong><br>{body}" }
+      ]}
+    ]},
+
+    { "name": "reliable-solutions", "section": { "index": 9, "expect": { "paras": 2 } }, "binds": [
+      { "target": "7094982a", "field": "title",  "value": "title" },
+      { "target": "55033ecf", "field": "editor", "value": "paras" }
+    ]},
+
+    { "name": "why-choose", "section": { "index": 10, "expect": { "cards": 6 } }, "binds": [
+      { "target": "6472341", "field": "title", "value": "title" },
+      { "repeat": { "over": "cards", "container": "4fdd9aff" }, "binds": [
+        { "field": "title_text",       "value": "item.heading" },
+        { "field": "description_text", "value": "item.body" }
+      ]}
+    ]},
+
+    { "name": "faq", "section": { "index": 12, "expect": { "cards": ">=4" } }, "binds": [
+      { "target": "1dcb8196", "field": "title", "value": "title" },
+      { "accordion": { "target": "20c5a18b", "over": "cards", "question": "item.heading", "answer": "item.body" } }
+    ]},
+
+    { "name": "final-cta", "section": { "index": 13, "expect": { "paras": 1, "buttons": 3 } }, "binds": [
+      { "target": "10a269fc", "field": "title",  "value": "title" },
+      { "target": "4814ddb3", "field": "editor", "value": "paras" },
+      { "repeat": { "over": "buttons", "container": "6fbae189", "clone_from": 0 }, "binds": [
+        { "field": "text", "value": "item.text" }
+      ]}
+    ]}
+  ]
+}

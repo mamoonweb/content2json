@@ -1,0 +1,1251 @@
+{
+  "errors": [],
+  "warnings": [
+    "DERIVED: var 'city' = 'Clayton' derived from document title 'Albert Services -- Clayton Electrical Web Page' (not an explicit content element) - please confirm",
+    "DERIVED: var 'service' = 'Electrical' derived from document title 'Albert Services -- Clayton Electrical Web Page' (not an explicit content element) - please confirm",
+    "[hero] heading 1ad728c0: template had an accent <span> ('Stay Warm with Reliable Heating Services in Bellbrook'); source gives plain text so the accent was dropped (set 'span_last_words' on the bind to re-apply)",
+    "[services-grid] source has 7 items but template container 4cacd431 has 6; cloned slot 78eb9414 x1 (new keys follow the cloned widget; review link/style)",
+    "[faq] heading 1dcb8196: template had an accent <span> ('Frequently Asked Questions'); source gives plain text so the accent was dropped (set 'span_last_words' on the bind to re-apply)",
+    "[faq] accordion had 4 items, source has 5; cloned last item/container x1",
+    "[final-cta] source has 3 items but template container 6fbae189 has 2; cloned slot 4bb1ab53 x1 (new keys follow the cloned widget; review link/style)",
+    "STALE TEMPLATE MEDIA retained in 75f9d86f (image): file name contains ['bellbrook', 'heating'] - replace image",
+    "STALE TEMPLATE MEDIA retained in 6cfe06eb (image): file name contains ['bellbrook', 'heating'] - replace image",
+    "STALE TEMPLATE MEDIA retained in 26c5c78 (image): file name contains ['bellbrook', 'heating'] - replace image"
+  ],
+  "checks": [
+    {
+      "check": "JSON serialises and re-parses",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "Template structure, key names and data types preserved",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "New elements exist only as logged clones",
+      "ok": true,
+      "detail": "4 clone(s) logged"
+    },
+    {
+      "check": "Element ids unique",
+      "ok": true,
+      "detail": "93 elements"
+    },
+    {
+      "check": "Accordion items match child containers",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "No relevant source node silently skipped",
+      "ok": true,
+      "detail": "2 unmapped section(s), 0 unmapped node(s) in mapped sections - all reported"
+    },
+    {
+      "check": "No source node mapped to two different targets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "Every mapped text appears verbatim in its target field",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "Source wording unmodified (spot check on whole output)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "No stale template terms left in text fields",
+      "ok": true,
+      "detail": "terms checked: ['bellbrook', 'furnace', 'heat pump', 'heating', 'thermostat']"
+    }
+  ],
+  "retained": [
+    {
+      "id": "a68a826",
+      "path": "content[1].elements[0].elements[2]",
+      "widget": "button",
+      "field": "text",
+      "value": "Call 937-444-4357",
+      "reason": "Hero call button: source has no hero button and no phone number ('Call Button' / '*Insert Contact Details*' are placeholders). Template label and tel: link kept - confirm the number.",
+      "stale": []
+    },
+    {
+      "id": "19602cd3",
+      "path": "content[1].elements[1].elements[0]",
+      "widget": "template",
+      "field": "template_id",
+      "value": "global template #422",
+      "reason": "Satisfies source placeholder '*Insert Contact Form Here*' (form lives in global template #422)",
+      "stale": []
+    },
+    {
+      "id": "55e5ac2a",
+      "path": "content[3].elements[0].elements[2]",
+      "widget": "button",
+      "field": "text",
+      "value": "Schedule Service",
+      "reason": "No button text in source section 5 (Clayton's Trusted Electrical Specialists); template button kept",
+      "stale": []
+    },
+    {
+      "id": "155ae91c",
+      "path": "content[9].elements[0].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "value": "What Our Client Says",
+      "reason": "Testimonials block - not present in the content file",
+      "stale": []
+    },
+    {
+      "id": "2743f7a9",
+      "path": "content[9].elements[0].elements[1]",
+      "widget": "shortcode",
+      "field": "shortcode",
+      "value": "[trustindex no-registration=google]",
+      "reason": "Testimonials shortcode - not present in the content file",
+      "stale": []
+    },
+    {
+      "id": "1a652e61",
+      "path": "content[10].elements[0]",
+      "widget": "template",
+      "field": "template_id",
+      "value": "global template #449",
+      "reason": "Global template #449 - content lives outside this JSON. Possibly where the source 'Service Areas' / 'Real Jobs' blocks belong; unknown - confirm.",
+      "stale": []
+    },
+    {
+      "id": "46239fd6",
+      "path": "content[11].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "value": "FAQ",
+      "reason": "Eyebrow label above the FAQ heading; source has no equivalent",
+      "stale": []
+    }
+  ],
+  "media": [
+    {
+      "id": "e5342d8",
+      "path": "content[2].elements[2].elements[0]",
+      "widget": "call-to-action",
+      "url": "(empty)",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "2e867c8b",
+      "path": "content[2].elements[2].elements[1]",
+      "widget": "call-to-action",
+      "url": "(empty)",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "5526e620",
+      "path": "content[2].elements[2].elements[2]",
+      "widget": "call-to-action",
+      "url": "(empty)",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "918548c",
+      "path": "content[2].elements[2].elements[3]",
+      "widget": "call-to-action",
+      "url": "(empty)",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "7ca18942",
+      "path": "content[2].elements[2].elements[4]",
+      "widget": "call-to-action",
+      "url": "(empty)",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "78eb9414",
+      "path": "content[2].elements[2].elements[5]",
+      "widget": "call-to-action",
+      "url": "(empty)",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "75f9d86f",
+      "path": "content[3].elements[1].elements[0]",
+      "widget": "image",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/09/expert-heating-services-in-bellbrook-oh.jpg",
+      "alt": "",
+      "stale": [
+        "bellbrook",
+        "heating"
+      ]
+    },
+    {
+      "id": "74d0cc6c",
+      "path": "content[4].elements[1].elements[0]",
+      "widget": "image-box",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/08/ab-icons-2.png",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "748ac504",
+      "path": "content[4].elements[1].elements[1]",
+      "widget": "image-box",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/08/ab-icons-1.png",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "2cf86f1e",
+      "path": "content[4].elements[1].elements[2]",
+      "widget": "image-box",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/08/sec-icons-3.png",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "1f15c5e7",
+      "path": "content[5].elements[1].elements[0]",
+      "widget": "image",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/08/ab-2.webp",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "6cfe06eb",
+      "path": "content[6].elements[1].elements[0]",
+      "widget": "image",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/09/professional-heating-services-in-bellbrook-oh.jpg",
+      "alt": "",
+      "stale": [
+        "bellbrook",
+        "heating"
+      ]
+    },
+    {
+      "id": "26c5c78",
+      "path": "content[7].elements[1].elements[0]",
+      "widget": "image",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/09/trusted-heating-services-in-bellbrook-oh.jpg",
+      "alt": "",
+      "stale": [
+        "bellbrook",
+        "heating"
+      ]
+    },
+    {
+      "id": "50d6e8f4",
+      "path": "content[8].elements[0].elements[1].elements[0]",
+      "widget": "image-box",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/08/ab-icons-1.png",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "1605eef",
+      "path": "content[8].elements[0].elements[1].elements[1]",
+      "widget": "image-box",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/08/sec-icons-3.png",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "42fdedf9",
+      "path": "content[8].elements[0].elements[1].elements[2]",
+      "widget": "image-box",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/08/Group-1261158417.png",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "7389db81",
+      "path": "content[8].elements[0].elements[1].elements[3]",
+      "widget": "image-box",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/08/Group-1261158420.png",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "7494fae5",
+      "path": "content[8].elements[0].elements[1].elements[4]",
+      "widget": "image-box",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/08/sec-icons-5.png",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "30fc22d5",
+      "path": "content[8].elements[0].elements[1].elements[5]",
+      "widget": "image-box",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/08/loc-img.png",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "4f004f1d",
+      "path": "content[12].elements[1].elements[0]",
+      "widget": "image",
+      "url": "https://mb.dev-version.com/alberthvac/wp-content/uploads/2026/09/cta-img1.webp",
+      "alt": "",
+      "stale": []
+    },
+    {
+      "id": "4dff7448",
+      "path": "(clone)",
+      "widget": "call-to-action",
+      "url": "(empty)",
+      "alt": "",
+      "stale": []
+    }
+  ],
+  "unmapped_sections": [
+    {
+      "index": 4,
+      "text": [
+        "label: Real Jobs We've Completed Near You",
+        "placeholder: *Insert Case Studies Here*"
+      ]
+    },
+    {
+      "index": 11,
+      "text": [
+        "label: Your Trusted Home Service Experts Across the Miami Valley",
+        "listitem: Dayton",
+        "listitem: Miamisburg",
+        "listitem: Bellbrook",
+        "listitem: Riverside",
+        "listitem: Centerville",
+        "listitem: Springboro",
+        "listitem: Oakwood",
+        "listitem: Huber Heights",
+        "listitem: Kettering",
+        "listitem: Beavercreek",
+        "listitem: West Carrollton",
+        "listitem: Englewood",
+        "button: See All Service Areas",
+        "button: See All Service Areas",
+        "button: See All Service Areas",
+        "button: See All Service Areas"
+      ]
+    }
+  ],
+  "unmapped_nodes": [],
+  "mapping": [
+    {
+      "rule": "banner",
+      "section": null,
+      "source": "(derived) Electrical",
+      "source_kind": "derived",
+      "target": "3e4f198c",
+      "path": "content[0].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "old": "Heating",
+      "new": "Electrical",
+      "status": "mapped"
+    },
+    {
+      "rule": "hero",
+      "section": 2,
+      "source": "Electrical Services in Clayton, OH",
+      "source_kind": "heading",
+      "target": "1ad728c0",
+      "path": "content[1].elements[0].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "old": "Stay Warm with Reliable Heating Services in Bellb…",
+      "new": "Electrical Services in Clayton, OH",
+      "status": "mapped"
+    },
+    {
+      "rule": "hero",
+      "section": 2,
+      "source": "Albert Services provides complete electrical services for homeowners … | As a trusted electrical contractor, we offer both residential electri… | Need an emergency electrician fast? We provide 24 hour electrician se…",
+      "source_kind": "paragraph",
+      "target": "3f7ba278",
+      "path": "content[1].elements[0].elements[1]",
+      "widget": "text-editor",
+      "field": "editor",
+      "old": "When temperatures drop in Bellbrook, a dependable…",
+      "new": "Albert Services provides complete electrical services for homeowners …",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Complete Electrical Services in Clayton",
+      "source_kind": "heading",
+      "target": "2577d89d",
+      "path": "content[2].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "old": "Complete Heating Services for Bellbrook Homes",
+      "new": "Complete Electrical Services in Clayton",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Whether you need a quick repair or a full installation, Albert Servic…",
+      "source_kind": "paragraph",
+      "target": "ee18303",
+      "path": "content[2].elements[1]",
+      "widget": "text-editor",
+      "field": "editor",
+      "old": "Every home has unique heating needs, which is why…",
+      "new": "Whether you need a quick repair or a full installation, Albert Servic…",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Electrical Services",
+      "source_kind": "heading",
+      "target": "e5342d8",
+      "path": "content[2].elements[2].elements[0]",
+      "widget": "call-to-action",
+      "field": "title",
+      "old": "Heating Repair",
+      "new": "Electrical Services",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Our complete electrical services cover repairs, maintenance, and inst…",
+      "source_kind": "paragraph",
+      "target": "e5342d8",
+      "path": "content[2].elements[2].elements[0]",
+      "widget": "call-to-action",
+      "field": "description",
+      "old": "If your furnace or heating system isn't producing…",
+      "new": "Our complete electrical services cover repairs, maintenance, and inst…",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Book Now",
+      "source_kind": "button",
+      "target": "e5342d8",
+      "path": "content[2].elements[2].elements[0]",
+      "widget": "call-to-action",
+      "field": "button",
+      "old": "Book Now",
+      "new": "Book Now",
+      "status": "unchanged (identical wording)"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Licensed Electrician Team",
+      "source_kind": "heading",
+      "target": "2e867c8b",
+      "path": "content[2].elements[2].elements[1]",
+      "widget": "call-to-action",
+      "field": "title",
+      "old": "Heating Installation & Replacement",
+      "new": "Licensed Electrician Team",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Every job is completed by a licensed electrician you can trust.",
+      "source_kind": "paragraph",
+      "target": "2e867c8b",
+      "path": "content[2].elements[2].elements[1]",
+      "widget": "call-to-action",
+      "field": "description",
+      "old": "When it's time for a new system, we'll help you c…",
+      "new": "Every job is completed by a licensed electrician you can trust.",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Book Now",
+      "source_kind": "button",
+      "target": "2e867c8b",
+      "path": "content[2].elements[2].elements[1]",
+      "widget": "call-to-action",
+      "field": "button",
+      "old": "Book Now",
+      "new": "Book Now",
+      "status": "unchanged (identical wording)"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Emergency Electrician",
+      "source_kind": "heading",
+      "target": "5526e620",
+      "path": "content[2].elements[2].elements[2]",
+      "widget": "call-to-action",
+      "field": "title",
+      "old": "Heating Maintenance",
+      "new": "Emergency Electrician",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Our emergency electrician team is ready to respond when you need help…",
+      "source_kind": "paragraph",
+      "target": "5526e620",
+      "path": "content[2].elements[2].elements[2]",
+      "widget": "call-to-action",
+      "field": "description",
+      "old": "Routine heating maintenance helps improve efficie…",
+      "new": "Our emergency electrician team is ready to respond when you need help…",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Book Now",
+      "source_kind": "button",
+      "target": "5526e620",
+      "path": "content[2].elements[2].elements[2]",
+      "widget": "call-to-action",
+      "field": "button",
+      "old": "Book Now",
+      "new": "Book Now",
+      "status": "unchanged (identical wording)"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Trusted Electrical Contractor",
+      "source_kind": "heading",
+      "target": "918548c",
+      "path": "content[2].elements[2].elements[3]",
+      "widget": "call-to-action",
+      "field": "title",
+      "old": "Heat Pump Services",
+      "new": "Trusted Electrical Contractor",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "As a trusted electrical contractor, we know Clayton homes inside and …",
+      "source_kind": "paragraph",
+      "target": "918548c",
+      "path": "content[2].elements[2].elements[3]",
+      "widget": "call-to-action",
+      "field": "description",
+      "old": "We install, repair, and maintain heat pumps to pr…",
+      "new": "As a trusted electrical contractor, we know Clayton homes inside and …",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Book Now",
+      "source_kind": "button",
+      "target": "918548c",
+      "path": "content[2].elements[2].elements[3]",
+      "widget": "call-to-action",
+      "field": "button",
+      "old": "Book Now",
+      "new": "Book Now",
+      "status": "unchanged (identical wording)"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Residential Electrician Services",
+      "source_kind": "heading",
+      "target": "7ca18942",
+      "path": "content[2].elements[2].elements[4]",
+      "widget": "call-to-action",
+      "field": "title",
+      "old": "Thermostat Services",
+      "new": "Residential Electrician Services",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Our residential electrician services keep every part of your home's e…",
+      "source_kind": "paragraph",
+      "target": "7ca18942",
+      "path": "content[2].elements[2].elements[4]",
+      "widget": "call-to-action",
+      "field": "description",
+      "old": "Smart thermostat upgrades and calibrations help i…",
+      "new": "Our residential electrician services keep every part of your home's e…",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Book Now",
+      "source_kind": "button",
+      "target": "7ca18942",
+      "path": "content[2].elements[2].elements[4]",
+      "widget": "call-to-action",
+      "field": "button",
+      "old": "Book Now",
+      "new": "Book Now",
+      "status": "unchanged (identical wording)"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "24 Hour Electrician",
+      "source_kind": "heading",
+      "target": "78eb9414",
+      "path": "content[2].elements[2].elements[5]",
+      "widget": "call-to-action",
+      "field": "title",
+      "old": "Emergency Heating Repairs",
+      "new": "24 Hour Electrician",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Electrical problems don't wait, and neither do we. Our 24 hour electr…",
+      "source_kind": "paragraph",
+      "target": "78eb9414",
+      "path": "content[2].elements[2].elements[5]",
+      "widget": "call-to-action",
+      "field": "description",
+      "old": "Heating problems don't always happen during busin…",
+      "new": "Electrical problems don't wait, and neither do we. Our 24 hour electr…",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Book Now",
+      "source_kind": "button",
+      "target": "78eb9414",
+      "path": "content[2].elements[2].elements[5]",
+      "widget": "call-to-action",
+      "field": "button",
+      "old": "Book Now",
+      "new": "Book Now",
+      "status": "unchanged (identical wording)"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Electrical Repair Service",
+      "source_kind": "heading",
+      "target": "4dff7448",
+      "path": "(clone)",
+      "widget": "call-to-action",
+      "field": "title",
+      "old": "Emergency Heating Repairs",
+      "new": "Electrical Repair Service",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "From outlets to panels, our electrical repair service resolves the is…",
+      "source_kind": "paragraph",
+      "target": "4dff7448",
+      "path": "(clone)",
+      "widget": "call-to-action",
+      "field": "description",
+      "old": "Heating problems don't always happen during busin…",
+      "new": "From outlets to panels, our electrical repair service resolves the is…",
+      "status": "mapped"
+    },
+    {
+      "rule": "services-grid",
+      "section": 3,
+      "source": "Book Now",
+      "source_kind": "button",
+      "target": "4dff7448",
+      "path": "(clone)",
+      "widget": "call-to-action",
+      "field": "button",
+      "old": "Book Now",
+      "new": "Book Now",
+      "status": "unchanged (identical wording)"
+    },
+    {
+      "rule": "specialists",
+      "section": 5,
+      "source": "Clayton's Trusted Electrical Specialists",
+      "source_kind": "heading",
+      "target": "f8d8704",
+      "path": "content[3].elements[0].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "old": "Professional Heating Repairs in Bellbrook",
+      "new": "Clayton's Trusted Electrical Specialists",
+      "status": "mapped"
+    },
+    {
+      "rule": "specialists",
+      "section": 5,
+      "source": "When Clayton homeowners need dependable electrical services, Albert S… | As a trusted electrical contractor, every technician on our team is a… | Whether you need a residential electrician for routine work or an eme…",
+      "source_kind": "paragraph",
+      "target": "1d672336",
+      "path": "content[3].elements[0].elements[1]",
+      "widget": "text-editor",
+      "field": "editor",
+      "old": "A heating system rarely stops working without war…",
+      "new": "When Clayton homeowners need dependable electrical services, Albert S…",
+      "status": "mapped"
+    },
+    {
+      "rule": "experienced",
+      "section": 6,
+      "source": "Experienced Electrical Services in Clayton, OH",
+      "source_kind": "heading",
+      "target": "56db65e2",
+      "path": "content[4].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "old": "Experienced Heating Professionals You Can Trust",
+      "new": "Experienced Electrical Services in Clayton, OH",
+      "status": "mapped"
+    },
+    {
+      "rule": "experienced",
+      "section": 6,
+      "source": "Fast, Reliable Repairs",
+      "source_kind": "heading",
+      "target": "74d0cc6c",
+      "path": "content[4].elements[1].elements[0]",
+      "widget": "image-box",
+      "field": "title_text",
+      "old": "Fast Response",
+      "new": "Fast, Reliable Repairs",
+      "status": "mapped"
+    },
+    {
+      "rule": "experienced",
+      "section": 6,
+      "source": "We diagnose issues efficiently and offer lasting repairs to restore y…",
+      "source_kind": "paragraph",
+      "target": "74d0cc6c",
+      "path": "content[4].elements[1].elements[0]",
+      "widget": "image-box",
+      "field": "description_text",
+      "old": "When your heating system stops working, our team …",
+      "new": "We diagnose issues efficiently and offer lasting repairs to restore y…",
+      "status": "mapped"
+    },
+    {
+      "rule": "experienced",
+      "section": 6,
+      "source": "Honest Recommendations",
+      "source_kind": "heading",
+      "target": "748ac504",
+      "path": "content[4].elements[1].elements[1]",
+      "widget": "image-box",
+      "field": "title_text",
+      "old": "Skilled Professionals",
+      "new": "Honest Recommendations",
+      "status": "mapped"
+    },
+    {
+      "rule": "experienced",
+      "section": 6,
+      "source": "We explain your options clearly so you can make informed decisions wi…",
+      "source_kind": "paragraph",
+      "target": "748ac504",
+      "path": "content[4].elements[1].elements[1]",
+      "widget": "image-box",
+      "field": "description_text",
+      "old": "Every local heating technician on our team is tra…",
+      "new": "We explain your options clearly so you can make informed decisions wi…",
+      "status": "mapped"
+    },
+    {
+      "rule": "experienced",
+      "section": 6,
+      "source": "Reliable Workmanship",
+      "source_kind": "heading",
+      "target": "2cf86f1e",
+      "path": "content[4].elements[1].elements[2]",
+      "widget": "image-box",
+      "field": "title_text",
+      "old": "Honest Recommendations",
+      "new": "Reliable Workmanship",
+      "status": "mapped"
+    },
+    {
+      "rule": "experienced",
+      "section": 6,
+      "source": "Every repair is completed using quality parts and proven techniques f…",
+      "source_kind": "paragraph",
+      "target": "2cf86f1e",
+      "path": "content[4].elements[1].elements[2]",
+      "widget": "image-box",
+      "field": "description_text",
+      "old": "We explain every repair clearly, answer your ques…",
+      "new": "Every repair is completed using quality parts and proven techniques f…",
+      "status": "mapped"
+    },
+    {
+      "rule": "experienced",
+      "section": 6,
+      "source": "Schedule Service",
+      "source_kind": "button",
+      "target": "3fe535e3",
+      "path": "content[4].elements[2]",
+      "widget": "button",
+      "field": "text",
+      "old": "Schedule Service",
+      "new": "Schedule Service",
+      "status": "mapped"
+    },
+    {
+      "rule": "go-to-contractor",
+      "section": 7,
+      "source": "Clayton's Go-To Electrical Contractor Since 1998",
+      "source_kind": "heading",
+      "target": "17871ff0",
+      "path": "content[5].elements[0].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "old": "Serving the Bellbrook Community",
+      "new": "Clayton's Go-To Electrical Contractor Since 1998",
+      "status": "mapped"
+    },
+    {
+      "rule": "go-to-contractor",
+      "section": 7,
+      "source": "Albert Services has proudly served homeowners throughout Clayton and … | From routine maintenance to complex repairs, our electrical contracto…",
+      "source_kind": "paragraph",
+      "target": "29c9b76b",
+      "path": "content[5].elements[0].elements[1]",
+      "widget": "text-editor",
+      "field": "editor",
+      "old": "Bellbrook is known for its welcoming neighborhood…",
+      "new": "Albert Services has proudly served homeowners throughout Clayton and …",
+      "status": "mapped"
+    },
+    {
+      "rule": "go-to-contractor",
+      "section": 7,
+      "source": "Get In Touch",
+      "source_kind": "button",
+      "target": "7e524c4a",
+      "path": "content[5].elements[0].elements[2]",
+      "widget": "button",
+      "field": "text",
+      "old": "Get In Touch",
+      "new": "Get In Touch",
+      "status": "mapped"
+    },
+    {
+      "rule": "benefits",
+      "section": 8,
+      "source": "Benefits of Professional Electrical Services",
+      "source_kind": "heading",
+      "target": "26377df3",
+      "path": "content[6].elements[0].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "old": "The Benefits of Regular Heating Maintenance",
+      "new": "Benefits of Professional Electrical Services",
+      "status": "mapped"
+    },
+    {
+      "rule": "benefits",
+      "section": 8,
+      "source": "Professional electrical service offers more than a quick fix. It help… | Fast Diagnosis | Our technicians quickly identify the cause of electrical issues to mi… …",
+      "source_kind": "heading,paragraph",
+      "target": "88f074a",
+      "path": "content[6].elements[0].elements[1]",
+      "widget": "text-editor",
+      "field": "editor",
+      "old": "Routine heating maintenance is one of the smartes…",
+      "new": "Professional electrical service offers more than a quick fix. It help…",
+      "status": "mapped"
+    },
+    {
+      "rule": "reliable-solutions",
+      "section": 9,
+      "source": "Reliable Electrical Solutions for Clayton Homes",
+      "source_kind": "heading",
+      "target": "7094982a",
+      "path": "content[7].elements[0].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "old": "Expert Heating Installation and Replacement",
+      "new": "Reliable Electrical Solutions for Clayton Homes",
+      "status": "mapped"
+    },
+    {
+      "rule": "reliable-solutions",
+      "section": 9,
+      "source": "Electrical issues can affect any home, from minor repairs to major up… | Albert Services provides complete electrical services from our team o…",
+      "source_kind": "paragraph",
+      "target": "55033ecf",
+      "path": "content[7].elements[0].elements[1]",
+      "widget": "text-editor",
+      "field": "editor",
+      "old": "If your heating system is older, requires frequen…",
+      "new": "Electrical issues can affect any home, from minor repairs to major up…",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "Why Homeowners Choose Albert Services",
+      "source_kind": "heading",
+      "target": "6472341",
+      "path": "content[8].elements[0].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "old": "Why Homeowners Choose Albert Services",
+      "new": "Why Homeowners Choose Albert Services",
+      "status": "unchanged (identical wording)"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "Designed Around Your Home",
+      "source_kind": "heading",
+      "target": "50d6e8f4",
+      "path": "content[8].elements[0].elements[1].elements[0]",
+      "widget": "image-box",
+      "field": "title_text",
+      "old": "Experienced Team",
+      "new": "Designed Around Your Home",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "Every service is planned with your home's specific electrical system …",
+      "source_kind": "paragraph",
+      "target": "50d6e8f4",
+      "path": "content[8].elements[0].elements[1].elements[0]",
+      "widget": "image-box",
+      "field": "description_text",
+      "old": "Our knowledgeable technicians have decades of exp…",
+      "new": "Every service is planned with your home's specific electrical system …",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "Skilled Technicians",
+      "source_kind": "heading",
+      "target": "1605eef",
+      "path": "content[8].elements[0].elements[1].elements[1]",
+      "widget": "image-box",
+      "field": "title_text",
+      "old": "Honest Service",
+      "new": "Skilled Technicians",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "Our technicians use proper testing and repair practices for safe, dep…",
+      "source_kind": "paragraph",
+      "target": "1605eef",
+      "path": "content[8].elements[0].elements[1].elements[1]",
+      "widget": "image-box",
+      "field": "description_text",
+      "old": "We believe in transparent recommendations and cle…",
+      "new": "Our technicians use proper testing and repair practices for safe, dep…",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "30-Minute Arrival Window",
+      "source_kind": "heading",
+      "target": "42fdedf9",
+      "path": "content[8].elements[0].elements[1].elements[2]",
+      "widget": "image-box",
+      "field": "title_text",
+      "old": "Dependable Scheduling and 30-minute Arrival Window",
+      "new": "30-Minute Arrival Window",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "We value your time by providing a convenient 30-minute arrival window…",
+      "source_kind": "paragraph",
+      "target": "42fdedf9",
+      "path": "content[8].elements[0].elements[1].elements[2]",
+      "widget": "image-box",
+      "field": "description_text",
+      "old": "We respect your time. Instead of asking you to wa…",
+      "new": "We value your time by providing a convenient 30-minute arrival window…",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "Modern Product Options",
+      "source_kind": "heading",
+      "target": "7389db81",
+      "path": "content[8].elements[0].elements[1].elements[3]",
+      "widget": "image-box",
+      "field": "title_text",
+      "old": "Quality Workmanship",
+      "new": "Modern Product Options",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "Whether you need standard fixtures or upgraded electrical solutions, …",
+      "source_kind": "paragraph",
+      "target": "7389db81",
+      "path": "content[8].elements[0].elements[1].elements[3]",
+      "widget": "image-box",
+      "field": "description_text",
+      "old": "Every repair and installation is completed with a…",
+      "new": "Whether you need standard fixtures or upgraded electrical solutions, …",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "Clean Work Areas",
+      "source_kind": "heading",
+      "target": "7494fae5",
+      "path": "content[8].elements[0].elements[1].elements[4]",
+      "widget": "image-box",
+      "field": "title_text",
+      "old": "Customer Satisfaction",
+      "new": "Clean Work Areas",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "We protect your home during every job and leave the work area neat wh…",
+      "source_kind": "paragraph",
+      "target": "7494fae5",
+      "path": "content[8].elements[0].elements[1].elements[4]",
+      "widget": "image-box",
+      "field": "description_text",
+      "old": "Your comfort is always our highest priority.",
+      "new": "We protect your home during every job and leave the work area neat wh…",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "Trusted Local Team",
+      "source_kind": "heading",
+      "target": "30fc22d5",
+      "path": "content[8].elements[0].elements[1].elements[5]",
+      "widget": "image-box",
+      "field": "title_text",
+      "old": "Local Expertise",
+      "new": "Trusted Local Team",
+      "status": "mapped"
+    },
+    {
+      "rule": "why-choose",
+      "section": 10,
+      "source": "For decades, homeowners throughout Clayton and the Miami Valley have …",
+      "source_kind": "paragraph",
+      "target": "30fc22d5",
+      "path": "content[8].elements[0].elements[1].elements[5]",
+      "widget": "image-box",
+      "field": "description_text",
+      "old": "As experienced heating and cooling contractors, w…",
+      "new": "For decades, homeowners throughout Clayton and the Miami Valley have …",
+      "status": "mapped"
+    },
+    {
+      "rule": "faq",
+      "section": 12,
+      "source": "Clayton Electrical FAQs",
+      "source_kind": "heading",
+      "target": "1dcb8196",
+      "path": "content[11].elements[1]",
+      "widget": "heading",
+      "field": "title",
+      "old": "Frequently Asked Questions",
+      "new": "Clayton Electrical FAQs",
+      "status": "mapped"
+    },
+    {
+      "rule": "faq",
+      "section": 12,
+      "source": "Q: Do you offer 24 hour electrician service for… | A: Yes. Our 24 hour electrician service means h…",
+      "source_kind": "heading,paragraph",
+      "target": "20c5a18b",
+      "path": "content[11].elements[2]",
+      "widget": "nested-accordion",
+      "field": "items[0] + child editor 7b86e625",
+      "old": "",
+      "new": "Do you offer 24 hour electrician service for emergencies?",
+      "status": "mapped"
+    },
+    {
+      "rule": "faq",
+      "section": 12,
+      "source": "Q: What should I look for in an electrical cont… | A: A trustworthy electrical contractor should b…",
+      "source_kind": "heading,paragraph",
+      "target": "20c5a18b",
+      "path": "content[11].elements[2]",
+      "widget": "nested-accordion",
+      "field": "items[1] + child editor 66cec799",
+      "old": "",
+      "new": "What should I look for in an electrical contractor?",
+      "status": "mapped"
+    },
+    {
+      "rule": "faq",
+      "section": 12,
+      "source": "Q: Is every technician a licensed electrician? | A: Yes. Every job is completed by a licensed el…",
+      "source_kind": "heading,paragraph",
+      "target": "20c5a18b",
+      "path": "content[11].elements[2]",
+      "widget": "nested-accordion",
+      "field": "items[2] + child editor 7256f716",
+      "old": "",
+      "new": "Is every technician a licensed electrician?",
+      "status": "mapped"
+    },
+    {
+      "rule": "faq",
+      "section": 12,
+      "source": "Q: Do you provide residential electrician servi… | A: Yes. Our residential electrician team servic…",
+      "source_kind": "heading,paragraph",
+      "target": "20c5a18b",
+      "path": "content[11].elements[2]",
+      "widget": "nested-accordion",
+      "field": "items[3] + child editor 43f7f1e5",
+      "old": "",
+      "new": "Do you provide residential electrician services for older h…",
+      "status": "mapped"
+    },
+    {
+      "rule": "faq",
+      "section": 12,
+      "source": "Q: How quickly can I get an emergency electrici… | A: Our emergency electrician team responds quic…",
+      "source_kind": "heading,paragraph",
+      "target": "20c5a18b",
+      "path": "content[11].elements[2]",
+      "widget": "nested-accordion",
+      "field": "items[4] + child editor c0ec551e",
+      "old": "",
+      "new": "How quickly can I get an emergency electrician to my home?",
+      "status": "mapped"
+    },
+    {
+      "rule": "final-cta",
+      "section": 13,
+      "source": "Need Reliable Home Service You Can Count On?",
+      "source_kind": "heading",
+      "target": "10a269fc",
+      "path": "content[12].elements[0].elements[0]",
+      "widget": "heading",
+      "field": "title",
+      "old": "Need Reliable Home Service You Can Count On?",
+      "new": "Need Reliable Home Service You Can Count On?",
+      "status": "unchanged (identical wording)"
+    },
+    {
+      "rule": "final-cta",
+      "section": 13,
+      "source": "Whether you need electrical services, an emergency electrician, or he…",
+      "source_kind": "paragraph",
+      "target": "4814ddb3",
+      "path": "content[12].elements[0].elements[1]",
+      "widget": "text-editor",
+      "field": "editor",
+      "old": "Whether you're dealing with a plumbing issue, an …",
+      "new": "Whether you need electrical services, an emergency electrician, or he…",
+      "status": "mapped"
+    },
+    {
+      "rule": "final-cta",
+      "section": 13,
+      "source": "Request A Free Estimate",
+      "source_kind": "button",
+      "target": "4bb1ab53",
+      "path": "content[12].elements[0].elements[2].elements[0]",
+      "widget": "button",
+      "field": "text",
+      "old": "Request A Free Estimate",
+      "new": "Request A Free Estimate",
+      "status": "unchanged (identical wording)"
+    },
+    {
+      "rule": "final-cta",
+      "section": 13,
+      "source": "Call Now",
+      "source_kind": "button",
+      "target": "6c1e6937",
+      "path": "content[12].elements[0].elements[2].elements[1]",
+      "widget": "button",
+      "field": "text",
+      "old": "Call 937-444-4357",
+      "new": "Call Now",
+      "status": "mapped"
+    },
+    {
+      "rule": "final-cta",
+      "section": 13,
+      "source": "Get In Touch",
+      "source_kind": "button",
+      "target": "adc65c70",
+      "path": "(clone)",
+      "widget": "button",
+      "field": "text",
+      "old": "Request A Free Estimate",
+      "new": "Get In Touch",
+      "status": "mapped"
+    },
+    {
+      "rule": "page",
+      "section": null,
+      "source": "(derived) document title",
+      "source_kind": "derived",
+      "target": "(page)",
+      "path": "title",
+      "widget": "page",
+      "field": "title",
+      "old": "bellbrook heating",
+      "new": "Clayton Electrical",
+      "status": "mapped"
+    }
+  ],
+  "clones": [
+    {
+      "rule": "services-grid",
+      "from": "78eb9414",
+      "id": "4dff7448"
+    },
+    {
+      "rule": "faq",
+      "from": "1edb0c3c",
+      "id": "694a2bd5"
+    },
+    {
+      "rule": "faq",
+      "from": "43f7f1e5",
+      "id": "c0ec551e"
+    },
+    {
+      "rule": "final-cta",
+      "from": "4bb1ab53",
+      "id": "adc65c70"
+    }
+  ]
+}
